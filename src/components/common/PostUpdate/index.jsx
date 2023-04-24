@@ -51,7 +51,7 @@ export default function PostStatus({ currentUser }) {
   return (
     <div className="post-status-main">
       <div className="user-details">
-        <img src={currentUser?.imageLink} alt="imageLink" />
+        <img src={currentUser?.photoURL} alt="photoURL" />
         <p className="name">{currentUser?.name}</p>
         <p className="headline">{currentUser?.headline}</p>
       </div>
@@ -59,7 +59,7 @@ export default function PostStatus({ currentUser }) {
         <img
           className="post-image"
           src={currentUser?.photoURL}
-          alt="imageLink"
+          alt="photoURL"
         />
         <button
           className="open-post-modal"

@@ -52,7 +52,7 @@ export default function PostsCard({ posts, id, getEditData }) {
           src={
             allUsers
               .filter((item) => item.id === posts.userID)
-              .map((item) => item.imageLink)[0]
+              .map((item) => item.photoURL)[0]
           }
         />
         <div>

@@ -75,7 +75,7 @@ export default function RegisterComponent() {
       </div>
       <hr className="hr-text" data-content="or" />
       <div className="google-btn-container">
-        <GoogleButton className="google-btn" onClick={googleSignIn} />
+        <GoogleButton className="google-btn" /*onClick={googleSignIn}*/ />
         <p className="go-to-signup">
           Already on LinkedIn?{" "}
           <span className="join-now" onClick={() => navigate("/")}>
