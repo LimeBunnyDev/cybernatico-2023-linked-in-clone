@@ -74,7 +74,12 @@ export default function Topbar({ currentUser }) {
         <></>
       )}
 
-      <img className="linkedin-logo" src={LinkedinLogo} alt="LinkedinLogo" />
+      <img
+        className="linkedin-logo"
+        src={LinkedinLogo}
+        alt="LinkedinLogo"
+        onClick={() => goToRoute("/home")}
+      />
       {isSearch ? (
         <SearchUsers
           setIsSearch={setIsSearch}

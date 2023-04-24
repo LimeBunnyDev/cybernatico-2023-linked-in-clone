@@ -9,7 +9,7 @@ export const uploadImage = (
   setProgress,
   setCurrentImage
 ) => {
-  const profilePicsRef = ref(storage, `profileImages/${file.name}`);
+  const profilePicsRef = ref(storage, `files/${file.name}`);
   const uploadTask = uploadBytesResumable(profilePicsRef, file);
 
   uploadTask.on(
@@ -26,7 +26,7 @@ export const uploadImage = (
     },
     () => {
       getDownloadURL(uploadTask.snapshot.ref).then((response) => {
-        editProfile(id, { imageLink: response });
+        editProfile(id, { photoURL: response });
         setModalOpen(false);
         setCurrentImage({});
         setProgress(0);

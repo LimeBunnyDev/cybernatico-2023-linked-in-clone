@@ -19,8 +19,8 @@ export default function PostStatus({ currentUser }) {
     let object = {
       status: status,
       timeStamp: getCurrentTimeStamp("LLL"),
-      userEmail: localStorage.getItem("userEmail"),
-      //userEmail: currentUser.email,
+      //userEmail: localStorage.getItem("userEmail"),
+      userEmail: currentUser.email,
       userName: currentUser.name,
       postID: getUniqueID(),
       userID: currentUser.id,

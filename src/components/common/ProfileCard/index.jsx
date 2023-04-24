@@ -37,6 +37,7 @@ export default function ProfileCard({ onEdit, currentUser }) {
       getSingleUser(setCurrentProfile, location?.state?.email);
     }
   }, []);
+  console.log(currentUser?.photoURL);
 
   return (
     <>
