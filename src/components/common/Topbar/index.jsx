@@ -105,7 +105,7 @@ export default function Topbar({ currentUser }) {
       )}
       <img
         className="user-logo"
-        src={currentUser?.imageLink}
+        src={user}
         alt="user"
         onClick={displayPopup}
       />
@@ -119,7 +119,7 @@ export default function Topbar({ currentUser }) {
           ) : (
             filteredUsers.map((user) => (
               <div className="search-inner" onClick={() => openUser(user)}>
-                <img src={user.imageLink} />
+                <img src={user.photoURL} />
                 <p className="name">{user.name}</p>
               </div>
             ))

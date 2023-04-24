@@ -19,7 +19,8 @@ export default function PostStatus({ currentUser }) {
     let object = {
       status: status,
       timeStamp: getCurrentTimeStamp("LLL"),
-      userEmail: currentUser.email,
+      userEmail: localStorage.getItem("userEmail"),
+      //userEmail: currentUser.email,
       userName: currentUser.name,
       postID: getUniqueID(),
       userID: currentUser.id,
@@ -57,7 +58,7 @@ export default function PostStatus({ currentUser }) {
       <div className="post-status">
         <img
           className="post-image"
-          src={currentUser?.imageLink}
+          src={currentUser?.photoURL}
           alt="imageLink"
         />
         <button
