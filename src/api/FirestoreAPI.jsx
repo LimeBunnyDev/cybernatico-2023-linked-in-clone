@@ -21,7 +21,7 @@ let commentsRef = collection(firestore, "comments");
 let connectionRef = collection(firestore, "connections");
 
 export const postStatus = (object) => {
-  addDoc(postsRef, object).orderBy("timeStamp", "desc")
+  addDoc(postsRef, object)
     .then(() => {
       toast.success("Post has been added successfully");
     })
@@ -31,7 +31,7 @@ export const postStatus = (object) => {
 };
 
 export const getStatus = (setAllStatus) => {
-  const q = query(postsRef, orderBy("timeStamp"));
+  const q = query(postsRef, orderBy("timeStamp", "desc"));
   onSnapshot(q, (response) => {
     setAllStatus(
       response.docs.map((docs) => {
@@ -173,7 +173,11 @@ export const getComments = (postId, setComments) => {
 export const updatePost = (id, status, postImage) => {
   let docToUpdate = doc(postsRef, id);
   try {
-    updateDoc(docToUpdate, { status, postImage });
+    if (postImage) {
+      updateDoc(docToUpdate, { status, postImage });
+    } else {
+      updateDoc(docToUpdate, { status });
+    }
     toast.success("Post has been updated!");
   } catch (err) {
     console.log(err);

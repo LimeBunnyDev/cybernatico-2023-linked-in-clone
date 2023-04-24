@@ -39,10 +39,14 @@ const ModalComponent = ({
         }}
         footer={[
           <Button
-            onClick={isEdit ? updateStatus : sendStatus}
+            onClick={
+              isEdit
+                ? updateStatus
+                : sendStatus && console.log(status, status.length)
+            }
             key="submit"
             type="primary"
-            disabled={status.length > 0 ? false : true}
+            disabled={status === "" || "<p><br></p>" ? true : false}
           >
             {isEdit ? "Update" : "Post"}
           </Button>,
