@@ -46,7 +46,7 @@ const ModalComponent = ({
             }
             key="submit"
             type="primary"
-            disabled={status === "" || "<p><br></p>" ? true : false}
+            disabled={status === "" || "<p><br></p>" ? true : false} // !!SOLVE HIGH PRIORITy!!
           >
             {isEdit ? "Update" : "Post"}
           </Button>,
