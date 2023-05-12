@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { GoogleSignInAPI, LoginAPI } from "../api/AuthAPI";
-import LinkedinLogo from "../assets/linkedinLogo.png";
+import AITalentLogo from "../assets/AITalentLogo.png";
 import GoogleButton from "react-google-button";
 import { useNavigate } from "react-router-dom";
 import "../Sass/LoginComponent.scss";
@@ -12,7 +12,7 @@ export default function LoginComponent() {
   const login = async () => {
     try {
       let res = await LoginAPI(credentails.email, credentails.password);
-      toast.success("Signed In to Linkedin!");
+      toast.success("Signed In to AITalent Junior!");
       localStorage.setItem("userEmail", res.user.email);
       navigate("/home");
     } catch (err) {
@@ -28,7 +28,7 @@ export default function LoginComponent() {
 
   return (
     <div className="login-wrapper">
-      <img src={LinkedinLogo} className="linkedinLogo" />
+      <img src={AITalentLogo} className="AITalentLogo" />
 
       <div className="login-wrapper-inner">
         <h1 className="heading">Sign in</h1>
@@ -60,7 +60,7 @@ export default function LoginComponent() {
       <div className="google-btn-container">
         <GoogleButton className="google-btn" /*onClick={googleSignIn}*/ />
         <p className="go-to-signup">
-          New to LinkedIn?{" "}
+          New to AITalent Junior?{" "}
           <span className="join-now" onClick={() => navigate("/register")}>
             Join now
           </span>

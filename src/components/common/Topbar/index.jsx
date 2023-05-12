@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import LinkedinLogo from "../../../assets/linkedinLogo.png";
+import AITalentLogo from "../../../assets/AITalentLogo.png";
 import SearchUsers from "../SearchUsers";
 import {
   AiOutlineHome,
@@ -75,9 +75,9 @@ export default function Topbar({ currentUser }) {
       )}
 
       <img
-        className="linkedin-logo"
-        src={LinkedinLogo}
-        alt="LinkedinLogo"
+        className="AITalentLogo"
+        src={AITalentLogo}
+        alt="AITalentLogo"
         onClick={() => goToRoute("/home")}
       />
       {isSearch ? (

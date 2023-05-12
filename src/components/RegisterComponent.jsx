@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { GoogleSignInAPI, RegisterAPI } from "../api/AuthAPI";
 import { postUserData } from "../api/FirestoreAPI";
-import LinkedinLogo from "../assets/linkedinLogo.png";
+import AITalentLogo from "../assets/AITalentLogo.png";
 import { useNavigate } from "react-router-dom";
 import { getUniqueID } from "../helpers/getUniqueId";
 import "../Sass/LoginComponent.scss";
@@ -38,7 +38,7 @@ export default function RegisterComponent() {
 
   return (
     <div className="login-wrapper">
-      <img src={LinkedinLogo} className="linkedinLogo" />
+      <img src={AITalentLogo} className="AITalentLogo" />
 
       <div className="login-wrapper-inner">
         <h1 className="heading">Make the most of your professional life</h1>
@@ -77,7 +77,7 @@ export default function RegisterComponent() {
       <div className="google-btn-container">
         <GoogleButton className="google-btn" /*onClick={googleSignIn}*/ />
         <p className="go-to-signup">
-          Already on LinkedIn?{" "}
+          Already on AITalent Junior?{" "}
           <span className="join-now" onClick={() => navigate("/")}>
             Sign in
           </span>

@@ -1,6 +1,6 @@
-$linkedinBlue1: #0072b1;
-$linkedinBlue2: #0073b1;
-$linkedinBlue3: #004c75;
+$aitalentColor1: #ffa600;
+$aitalentColor2: #ffc75f;
+$aitalentColor3: #b77700;
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
 
@@ -24,7 +24,7 @@ $linkedinBlue3: #004c75;
   font-size: 16px;
 }
 .common-input:focus {
-  outline: 1px solid $linkedinBlue1;
+  outline: 1px solid $aitalentColor1;
 }
 ::placeholder {
   font-family: system-ui;
@@ -44,7 +44,7 @@ $linkedinBlue3: #004c75;
 }
 
 .common-textArea:focus {
-  outline: 1px solid $linkedinBlue1;
+  outline: 1px solid $aitalentColor1;
 }
 ::placeholder {
   font-family: system-ui;
