@@ -1,9 +1,9 @@
 .posts-card {
   width: 550px;
   min-height: auto;
-  background-color: whitesmoke;
+  background-color: #212121;
   margin-top: 30px;
-  border: 1px solid #b7b7b7;
+  border: 1px solid #515151;
   border-radius: 7px;
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@
   .name {
     font-family: system-ui, sans-serif;
     font-size: 18px;
-    color: #212121;
+    color: #f1f1f1;
     font-weight: 600;
     margin: 0px 0 0 0px;
     cursor: pointer;
@@ -32,14 +32,14 @@
   .headline {
     font-family: system-ui, sans-serif;
     font-size: 15px;
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(225, 225, 225, 0.6);
     font-weight: 500;
     margin: 0px 0 0 0px;
   }
   .timestamp {
     font-family: system-ui, sans-serif;
     font-size: 12px;
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(225, 225, 225, 0.6);
     font-weight: 400;
     margin: 0px 0 0 0px;
   }
@@ -50,7 +50,7 @@
     font-family: Inter, sans-serif;
     font-size: 18px;
     font-weight: 400;
-    color: rgba(0, 0, 0, 0.9);
+    color: rgba(225, 225, 225, 0.9);
   }
 }
 
@@ -61,13 +61,13 @@
   display: flex;
   top: 10px;
   .action-icon {
-    color: #474747;
+    color: #f1f1f1;
     padding: 10px;
   }
 
   .action-icon:hover {
-    color: #000000;
-    background-color: #b7b7b7;
+    color: #f1f1f1;
+    background-color: #515151;
     padding: 10px;
     border-radius: 50%;
   }

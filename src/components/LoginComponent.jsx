@@ -56,7 +56,7 @@ export default function LoginComponent() {
           Sign in
         </button>
       </div>
-      <hr className="hr-text" data-content="or" />
+      <hr className="hr-text" data-content="" />
       <div className="google-btn-container">
         <GoogleButton className="google-btn" /*onClick={googleSignIn}*/ />
         <p className="go-to-signup">
